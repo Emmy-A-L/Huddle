@@ -392,6 +392,10 @@ footer {
 
         p {
             width: 30rem;
+
+            @media (max-width: 600px) {  /* Small phones */
+                width: 15rem;
+            }
         }
 
         input {
@@ -403,6 +407,10 @@ footer {
             &:focus {
                 border: 2px solid hsl(322, 100%, 66%);
                 border-style: outset;
+            }
+
+            @media (max-width: 600px) {  /* Small phones */
+                width: 15rem;
             }
         }
         #submit {
@@ -425,6 +433,12 @@ footer {
             form {
                 display: flex;
                 gap: 1rem;
+
+                @media (max-width: 600px) {  /* Small phones */
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
             }
         }
     }
